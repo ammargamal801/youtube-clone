@@ -1,0 +1,274 @@
+/* تحسينات عامة */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 80px;
+    padding-right: 10px;
+    padding-left: 100px;
+    background-color: rgb(248, 244, 244);
+}
+
+/* الهيدر */
+.header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px; /* مسافة داخلية من الجوانب */
+    box-sizing: border-box; /* تضمين الحدود والهوامش */
+    position: fixed;
+    background-color: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 70px;
+    border-bottom-width: 1px;
+    border-bottom-style:solid ;
+    border-bottom-color:rgb(192, 190, 190) ;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    z-index: 100;
+
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 70px;
+    background-color: white;
+    width: 90px;
+}
+
+/* الجزء الأيسر من الهيدر */
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* مسافة بين العناصر */
+}
+
+.icon-ham {
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.icon-youtube {
+    height: 120px;
+    width: 140px;
+    padding-left: 25px;
+    cursor: pointer;
+  
+}
+
+/* الجزء الأوسط من الهيدر */
+.middle {
+    display: flex;
+    flex: 1; /* يأخذ المساحة المتبقية بين اليمين واليسار */
+    justify-content: center; /* محاذاة العناصر في المنتصف */
+    align-items: center;
+    max-width: 600px; /* حد أقصى للعرض */
+    gap: 10px; /* مسافة بين العناصر */
+}
+
+.searchbutton {
+    flex: 1; /* يأخذ المساحة المتاحة */
+    height: 49px;
+    padding: 0 10px;
+    font-size: 20px;
+    border: 1px solid #cdc8c8;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+
+  margin-right: 40px;
+  
+}
+
+.searchbutton::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.search-logo-button {
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f2f2;
+    border: 1px solid #cdc8c8;
+    margin-left: -50px;
+    cursor: pointer;
+    border-radius: 1px;
+    position: relative;
+
+   
+}
+.search-logo-button .search-hover{
+    background-color: rgb(168, 163, 163);
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 3px;
+    bottom: -40px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.15;
+    pointer-events: none;
+}
+.search-logo-button:hover .search-hover {
+    opacity: 1;
+}
+.search-logo {
+    height: 24px;
+}
+
+.audio-logo-button {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+    cursor: pointer;
+}
+
+.audio-logo {
+    height: 20px;
+}
+
+/* الجزء الأيمن من الهيدر */
+.right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px; /* مسافة بين العناصر */
+}
+
+.video-logo {
+    height: 40px;
+    cursor: pointer;
+}
+
+.content-logo {
+    height: 40px;
+    cursor: pointer;
+}
+
+.noti-logo {
+    height: 30px;
+    cursor: pointer;
+}
+.gmail-pic {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+  margin-left: 10px;
+    cursor: pointer;
+}
+/* الشبكة */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* مسافات بين العناصر */
+    padding: 20px;
+
+}
+
+/* الفيديوهات */
+.screen1, .screen2, .screen3, .screen4 ,.screen5,.screen6 {
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.prof-pic, .prof-pic2, .prof-pic3 , .prof-pic4, .prof-pic5, .prof-pic6 {
+    height: 57px;
+    width: 57px;
+    border-radius: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+
+
+}
+
+.div-title1, .div-title2, .div-title3, .div-title4, .div-title5, .div-title6 {
+    margin-top: -85px;
+    padding-left: 70px;
+    line-height: 28px;
+    font-size: 21px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.div-desc1, .div-desc2, .div-desc3 , .div-desc4, .div-desc5, .div-desc6 {
+    padding-left: 80px;
+    line-height: 28px;
+    color: gray;
+    cursor: pointer;
+}
+
+.div-stats1, .div-stats2, .div-stats3 , .div-stats4, .div-stats5, .div-stats6{
+    margin-top: -17px;
+    padding-left: 80px;
+    line-height: 28px;
+    color: gray;
+    cursor: pointer;
+}
+.sidebar-img1 {
+height: 100px;
+padding-left: 10px;
+padding-top: 10px;
+cursor: pointer;
+}
+.sidebar-img2 {
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.sidebar-img3 {
+    height: 70px;
+    padding-top: 10px;
+    padding-left: 2px;
+    cursor: pointer;
+}
+.sidebar-img4 {
+    height: 80px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.sidebar-img5 {
+    height: 70px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+.sidebar-img6 {
+    height: 70px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+.time-bar {
+    position: absolute;
+    background-color: black;
+    color: white;
+    right:10px ;
+    bottom: 155px;
+    padding: 7px ;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.time-bar2 {
+    position: absolute;
+    background-color: black;
+    color: white;
+    right:10px ;
+    bottom: 170px;
+    padding: 7px ;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.video-pain , .video-sad ,.video-head ,.video-fight ,.video-clinic,.video-alone {
+    position: relative;
+}
